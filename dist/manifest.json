@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "zonejs-webext-issue",
+  "version": "0.0.1",
+  "homepage_url": "http://localhost:8000/",
+  "description": "Show annotations on top of any html5 web video.",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  // TODO: Remove this once development is complete.
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "zonejs-webext-issue",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    }
+  }
+}
