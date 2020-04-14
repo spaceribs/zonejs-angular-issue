@@ -4,11 +4,15 @@
   "version": "0.0.1",
   "homepage_url": "http://localhost:8000/",
   "description": "Show annotations on top of any html5 web video.",
-  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "permissions": ["storage", "tabs", "http://*/*", "https://*/*"],
   // TODO: Remove this once development is complete.
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
   "background": {
     "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "content-script/index.html",
+    "open_in_tab": true
   },
   "browser_action": {
     "default_title": "zonejs-webext-issue",

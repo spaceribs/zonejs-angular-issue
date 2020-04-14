@@ -61,3 +61,6 @@ import "zone.js/dist/zone"; // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 import browser from "webextension-polyfill";
+import "zone.js/dist/zone-patch-web-ext";
+
+(window as any).Zone[(window as any).Zone.__symbol__("webext")](browser);
