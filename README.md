@@ -11,5 +11,4 @@ This recreates the scenario of injecting an angular application into a page via 
 5. Verify `Background Loaded` appears in the background page context.
 6. Go to any page, for instance: <https://www.google.com>
 7. Click the extension icon on the far right side to install the content script.
-8. Page you injected will have a `ZoneAwarePromise (window|global).Promise has been overwritten.` error.
-9. Inspected plugin page should have `Error: "fetch" is read-only` error.
+8. Page you injected will have a `ERROR TypeError: "'clearTimeout' called on an object that does not implement interface Window."` error.
